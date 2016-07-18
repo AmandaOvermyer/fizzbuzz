@@ -1,16 +1,20 @@
-for (var i = 1; i <=100; i++) {
+var userChoice = prompt ("Pick a number between 1 - 100");
+
+{
+for (var i = 1; i <=userChoice; i++) {
 	if ((i % 5 === 0) && (i % 3 === 0)) {
-		document.write("fizz buzz");
+		$('body').append("<p>fizz buzz</p>");
 	}
 	else if(i % 3 === 0) {
-		document.write("fizz");
+		$('body').append("<p>fizz</p>");
 	} 
 	else if (i % 5 === 0){
-		document.write("buzz");
+		$('body').append("<p>buzz</p>");
 	}
 	
 	else {
-		document.write(i); 
+		$('body').append("<p>" + i + "</p>"); 
 	}
-	
+}	
 };
+
